@@ -15,32 +15,20 @@ This deepfake detection system is designed to identify manipulated or synthetic 
 ## Installation
 
 1. Clone the repository:
-
-   ```bash
    git clone https://github.com/your-username/deepfake-detection.git
-Change to the project directory:
+   
+2.Change to the project directory:
+   cd deepfake-detection
 
-bash
-Copy code
-cd deepfake-detection
-Install dependencies:
+3.Install dependencies:
+   pip install -r requirements.txt
+   
+## Usage
 
-bash
-Copy code
-pip install -r requirements.txt
-Usage
-Download pre-trained models (if applicable):
-
-bash
-Copy code
-sh download_models.sh
 Run the deepfake detection system:
-
-bash
-Copy code
-python detect_deepfake.py --input_path path/to/input/video.mp4
+   python detect_deepfake.py --input_path path/to/input/video.mp4
 Replace path/to/input/video.mp4 with the path to the video you want to analyze.
 
-View the results:
+## View the results:
 
 The system will generate output indicating the likelihood of the input video containing deepfake content.
