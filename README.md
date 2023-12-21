@@ -13,15 +13,14 @@ This deepfake detection system is designed to identify manipulated or synthetic 
 - Other dependencies (list any additional libraries or tools required)
 
 ## Installation
-
 1. Clone the repository:
-   '''
+
    git clone https://github.com/your-username/deepfake-detection.git
-   '''
-2.Change to the project directory:
+   
+2. Change to the project directory:
    cd deepfake-detection
 
-3.Install dependencies:
+3. Install dependencies:
    pip install -r requirements.txt
    
 ## Usage
