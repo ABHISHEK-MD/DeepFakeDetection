@@ -29,7 +29,7 @@ This repository contains scripts for a Deepfake Detection System designed to ide
    ```
    
 ### Usage
-Use Google Colab to run the following scripts in the folder:
+Use Google Colab to run the following scripts in the folder:<br>
    1.PreProcessing.ipynb: Preprocess the data for training.<br>
    2.Training_model.ipynb: Train the deepfake detection model.<br>
    3.Predict.ipynb: Use the trained model to make predictions.
