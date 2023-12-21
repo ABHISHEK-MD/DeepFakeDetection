@@ -17,6 +17,7 @@ This repository contains scripts for a Deepfake Detection System designed to ide
    ```
    git clone https://github.com/your-username/RJPOLICE_HACK_494_t0b3h4ck3r5_8.git
    ```
+   
 2.Change to the project directory:
    ```
    cd RJPOLICE_HACK_494_t0b3h4ck3r5_8
@@ -27,11 +28,11 @@ This repository contains scripts for a Deepfake Detection System designed to ide
    pip install -r requirements.txt
    ```
    
-## Usage
-Use Google Colab to run the following scripts in the 'scripts' folder:
-   PreProcessing.ipynb: Preprocess the data for training.
-   Training_model.ipynb: Train the deepfake detection model.
-   Predict.ipynb: Use the trained model to make predictions.
+### Usage
+Use Google Colab to run the following scripts in the folder:
+   1.PreProcessing.ipynb: Preprocess the data for training.
+   2.Training_model.ipynb: Train the deepfake detection model.
+   3.Predict.ipynb: Use the trained model to make predictions.
 
 ## View the results:
 The system will generate output indicating the likelihood of the input video containing deepfake content.
