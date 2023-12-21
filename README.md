@@ -7,10 +7,11 @@ This deepfake detection system is designed to identify manipulated or synthetic 
 
 ## Requirements
 
-- Python 3.x
-- TensorFlow
+- Python 3.10
+- Face_Recognition
+- Torch
 - OpenCV
-- Other dependencies (list any additional libraries or tools required)
+- Google Colab
 
 ## Installation
 1. Clone the repository:
@@ -25,9 +26,7 @@ This deepfake detection system is designed to identify manipulated or synthetic 
    
 ## Usage
 
-Run the deepfake detection system:
-   python detect_deepfake.py --input_path path/to/input/video.mp4
-Replace path/to/input/video.mp4 with the path to the video you want to analyze.
+Use google colab to 
 
 ## View the results:
 
