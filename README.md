@@ -15,8 +15,9 @@ This deepfake detection system is designed to identify manipulated or synthetic 
 ## Installation
 
 1. Clone the repository:
+   '''
    git clone https://github.com/your-username/deepfake-detection.git
-   
+   '''
 2.Change to the project directory:
    cd deepfake-detection
 
