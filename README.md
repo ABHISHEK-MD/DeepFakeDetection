@@ -16,13 +16,13 @@ This deepfake detection system is designed to identify manipulated or synthetic 
 ## Installation
 1. Clone the repository:
 
-   git clone https://github.com/your-username/deepfake-detection.git
+   git clone https://github.com/ABHISHEK-MD/RJPOLICE_HACK_494_t0b3h4ck3r5_8.git
    
 2. Change to the project directory:
-   cd deepfake-detection
+   cd RJPOLICE_HACK_494_t0b3h4ck3r5_8
 
 3. Install dependencies:
-   pip install -r requirements.txt
+   
    
 ## Usage
 
