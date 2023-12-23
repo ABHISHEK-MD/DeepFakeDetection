@@ -1,38 +1,22 @@
 # RJPOLICE_HACK_494_t0b3h4ck3r5_8
 
-## Deepfake Detection System
+## Deepfake Image Detection
 
 ### Overview
-This repository contains scripts for a Deepfake Detection System designed to identify manipulated or synthetic media content using advanced machine learning techniques.
+This project demonstrates a web application for image classification using a deep learning model. The model is trained to classify images as either real or manipulated (deepfake).
 
 ### Requirements
-- Python 3.10
-- Face_Recognition
-- Torch
+- Python 3.x
+- Keras
 - OpenCV
 - Google Colab
 
-### Installation
-1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/RJPOLICE_HACK_494_t0b3h4ck3r5_8.git
-   ```
-   
-2.Change to the project directory:
-   ```
-   cd RJPOLICE_HACK_494_t0b3h4ck3r5_8
-   ```
-
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
    
 ### Usage
 Use Google Colab to run the following scripts in the folder:<br>
-   1.PreProcessing.ipynb: Preprocess the data for training.<br>
-   2.Training_model.ipynb: Train the deepfake detection model.<br>
-   3.Predict.ipynb: Use the trained model to make predictions.
-
-## View the results:
-The system will generate output indicating the likelihood of the input video containing deepfake content.
+   1.We have already trained the model.
+   2.To predict the image we have to give the pretrained model in the source code, as the .h5        file is large and it can't be uploaded in the git.
+   3.We will soon upload the usage document or video.
+   
+### View the results:
+The system will generate output indicating the likelihood of the input image containing deepfake content.
