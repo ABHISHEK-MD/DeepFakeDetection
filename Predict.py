@@ -11,26 +11,26 @@ from keras.preprocessing import image
 from keras.models import load_model
 import numpy as np
 
-# Load your trained model
+# Loading our own trained model
 model = load_model('/content/drive/MyDrive/Colab Notebooks/your_model.h5')
 
-# Load and preprocess the image for prediction
+# Loading and preprocessing the image for prediction
 img_path = '/content/drive/MyDrive/Colab Notebooks/real_0.jpg'  # Change this to the path of your test image
 img = image.load_img(img_path, target_size=(299, 299))
 img_array = image.img_to_array(img)
 img_array = np.expand_dims(img_array, axis=0)
 img_array /= 255.  # Normalize the image
 
-# Make predictions
+# Making predictions
 predictions = model.predict(img_array)
 
-# Print the predicted probability
+# Printing the predicted probability
 print(f"Predicted Probability: {predictions[0]}")
 
-# Get the predicted class
+# Getting the predicted class
 predicted_class = int(predictions[0] > 0.5)
 
-# Print the predicted class
+# Printing the predicted class
 if predicted_class == 1:
     print("The image is predicted to be a deepfake.")
 else:
