@@ -20,12 +20,33 @@ This project demonstrates a web application for image classification using a dee
     cd deepfake-detection
     ```
 
+2. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
 ### Training the model
 1. Prepare your dataset:
 
     Organize your dataset with two classes - real and fake images. Place them in separate directories inside a 'data' directory.
 
+    ```
+    data/
+    ├── real/
+    │   ├── real_image1.jpg
+    │   ├── real_image2.jpg
+    │   └── ...
+    ├── fake/
+    │   ├── fake_image1.jpg
+    │   ├── fake_image2.jpg
+    │   └── ...
+    ```
+
 2. Train the model:
+
+    ```bash
+    python train_model.py --train_data_dir path/to/train_data --validation_data_dir path/to/validation_data
+    ```
 
     This will train the deepfake detection model using the provided dataset.
    
