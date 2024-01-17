@@ -20,11 +20,6 @@ This project demonstrates a web application for image classification using a dee
     cd deepfake-detection
     ```
 
-2. Install the required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
 ### Training the model
 1. Prepare your dataset:
 
