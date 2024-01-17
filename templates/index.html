@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>t0b3h4ck3r5</title>
+
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/default.css') }} " id="theme-color"
+
+</head>
+<body>
+
+<section class="smart-scroll">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand heading-black" href="#">
+                Deepfake
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#news">News</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<section class="py-7 py-md-0 bg-hero" id="home">
+    <div class="container">
+        <div class="row vh-md-100">
+            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                <h1>Deepfake Detection</h1>
+
+                <form action="/predict" method="post" enctype="multipart/form-data">
+
+                    <div class="flex items-center justify-center w-max">
+                        <label for="dropzone-file" class="flex flex-col items-center justify-center w-max h-64 border-2 border-gray-300 border-dashed rounded-xl cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                                </svg>
+                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                            </div>
+                            <input id="dropzone-file" type="file" class="hidden" name="file" required/>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Detect Deepfake</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-6 pb-7" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="heading-black">From Fake to Real</h2>
+                <p class="text-muted lead">A deepfake refers to a manipulated or synthesized media, such as images, videos, or audio recordings, created using deep learning techniques. The term "deepfake" is derived from "deep learning," a type of artificial intelligence (AI) that involves training neural networks with large datasets to perform specific tasks, such as image or speech recognition.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 mx-auto">
+                <div class="row feature-boxes">
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-primary">
+                            <div class="icon-box-inner">
+                                <span data-feather="edit-3" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Spotting Deepfakes</h5>
+                        <p class="text-muted">Educate individuals on how to recognize signs of deepfakes. This could include inconsistencies in facial expressions, unnatural movements, or artifacts in the content.</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-success">
+                            <div class="icon-box-inner">
+                                <span data-feather="monitor" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Community Involvement</h5>
+                        <p class="text-muted">Foster a sense of community responsibility. Encourage individuals to report suspected deepfakes and to stay informed about the evolving landscape of digital manipulation.</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-danger">
+                            <div class="icon-box-inner">
+                                <span data-feather="layout" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Rewrite Images</h5>
+                        <p class="text-muted">Ypu can detect the images with frames and more</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-info">
+                            <div class="icon-box-inner">
+                                <span data-feather="globe" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Available globally</h5>
+                        <p class="text-muted">Access from all over the worldwide with all Detection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-6 mr-auto">
+                <h2>Stop, Think, Verify: Deepfakes Don't Deserve Your Trust</h2>
+                <p class="mb-5">Emphasize the risks associated with deepfakes, such as misinformation, identity theft, and reputational damage. Illustrate how these technologies can be exploited for malicious purposes.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="slick-about">
+                    <img src="/static/img/blog-1.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 1"/>
+                    <img src="/static/img/blog-2.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 2"/>
+                    <img src="/static/img/blog-3.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 3"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container-fluid" id="name">
+</div>
+
+<section class="py-7 bg-dark section-angle top-left bottom-left" id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="heading-black">News Today</h2>
+                <p class="text-muted lead">What's new </p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-raised" src="https://img.etimg.com/thumb/msid-105968475,width-650,height-488,imgsize-35376,resizemode-75/nithin-kamath-on-the-potential-dangers-of-deep-fake-in-financial-services-industry.jpg" alt="News">
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="card-title mb-2"><h5>Industry on edge as Zerodha CEO Nithin Kamath flags deepfake concerns</h5></a>
+                        <p class="text-muted small-xl mb-2"> Dec 19, 2023, 06:01:00 AM IST</p>
+                        <p class="card-text">Nithin Kamath, chief executive officer of one of India largest stockbrokers, Zerodha, last week posted a deepfake video of himself to highlight the potential impact of such technology in the financial services world.<a href="https://economictimes.indiatimes.com/tech/technology/can-deepfakes-impact-video-kyc-processes-followed-by-banks-stock-brokers/articleshow/106101830.cms" target="_blank">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-raised" src="https://img.etimg.com/thumb/msid-105994059,width-650,height-488,imgsize-23094,resizemode-75/narayana-murthy.jpg" alt="News">
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="card-title mb-2"><h5>Narayana Murthy speaks out against deepfake onslaught</h5></a>
+                        <p class="text-muted small-xl mb-2"> Dec 14, 2023, 05:24:48 PM IST</p>
+                        <p class="card-text">Deepfakes, or artificial intelligence (AI)-generated fraudulent videos, harnessing voice-cloning technologies have hit the corporate world, with Infosys founder NR Narayana Murthy being the latest victim.</p><a href="https://economictimes.indiatimes.com/tech/technology/narayana-murthy-speaks-out-against-deepfake-onslaught/articleshow/105994035.cms" target="_blank">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-raised" src="https://img.etimg.com/thumb/msid-105974740,width-650,height-488,imgsize-47276,resizemode-75/deepfakes-centre-to-issue-advisories-to-social-media-firms-for-100-compliance.jpg" alt="News">
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="card-title mb-2"><h5>Bollywood star or deepfake? AI floods social media in Asia</h5></a>
+                        <p class="text-muted small-xl mb-2"> Dec 14, 2023, 09:06:00 AM IST</p>
+                        <p class="card-text">Deepfakes: Centre to issue advisories to social media firms for 100% complianceIANS
+                            There was the Bollywood star in skin-tight lycra, the Bangladeshi politician filmed in a bikini and the young Pakistani woman snapped with a man.<a href="https://economictimes.indiatimes.com/tech/technology/bollywood-star-or-deepfake-ai-floods-social-media-in-asia/articleshow/105974676.cms" target="_blank">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-6">
+        </div>
+    </div>
+</section>
+
+<footer class="py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 mr-auto">
+                <h5>About Team</h5>
+                <p class="text-muted">Abhishek <br> Bhavaneeshwaran</p>
+                <ul class="list-inline social social-sm">
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-muted text-center small-xl">
+                &copy; t0b3h4ck3r5
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="scroll-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
+<div class="switcher-wrap">
+    <div class="switcher-trigger">
+        <span class="fa fa-gear"></span>
+    </div>
+    <div class="color-switcher">
+        <h6>Color Switcher</h6>
+        <ul class="mt-3 clearfix">
+            <li class="bg-teal active" data-color="default" title="Default Teal"></li>
+            <li class="bg-purple" data-color="purple" title="Purple"></li>
+            <li class="bg-blue" data-color="blue" title="Blue"></li>
+            <li class="bg-red" data-color="red" title="Red"></li>
+            <li class="bg-green" data-color="green" title="Green"></li>
+            <li class="bg-indigo" data-color="indigo" title="Indigo"></li>
+            <li class="bg-orange" data-color="orange" title="Orange"></li>
+            <li class="bg-cyan" data-color="cyan" title="Cyan"></li>
+            <li class="bg-yellow" data-color="yellow" title="Yellow"></li>
+            <li class="bg-pink" data-color="pink" title="Pink"></li>
+        </ul>
+        <p>These are just demo colors. You can <b>easily</b> create your own color scheme.</p>
+    </div>
+</div>
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="/static/js/scripts.js"></script>
+</body>
+</html>
