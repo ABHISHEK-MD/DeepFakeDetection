@@ -9,7 +9,7 @@ import numpy as np
 import librosa
 app = Flask(__name__)
 
-model = load_model("D:\\police\\RJPOLICE_HACK_494_t0b3h4ck3r5_8-main\\trained_model.h5")
+model = load_model("D:\\police\\RJPOLICE_HACK_494_t0b3h4ck3r5_8-main\\image_model.h5")
 
 
 UPLOAD_FOLDER = "static\\uploads\\"
