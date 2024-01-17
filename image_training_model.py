@@ -57,4 +57,4 @@ history = model.fit(
     validation_steps=validation_generator.samples // batch_size
 )
     
-model.save('your_model.h5')
+model.save('image_model.h5')
