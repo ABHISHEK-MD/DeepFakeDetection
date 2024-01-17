@@ -10,11 +10,12 @@ import librosa
 app = Flask(__name__)
 
 model = load_model("D:\\police\\RJPOLICE_HACK_494_t0b3h4ck3r5_8-main\\trained_model.h5")
-# Define the path for uploading images
+
+
 UPLOAD_FOLDER = "static\\uploads\\"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# Define allowed extensions for uploaded images
+
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg','mp4','wav','mp3'}
 
 def allowed_file(filename):
