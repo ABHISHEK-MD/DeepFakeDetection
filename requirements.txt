@@ -1,5 +1,8 @@
 tensorflow
 flask
 keros
-sklearn
 numpy
+librosa
+scikit-learn
+opencv-python
+lazy_loader
