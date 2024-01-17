@@ -3,7 +3,7 @@
 ## Deepfake Image Detection
 
 ### Overview
-This project demonstrates a web application for image classification using a deep learning model. The model is trained to classify images as either real or manipulated (deepfake).
+This project demonstrates a web application for image,video and audio classification using a deep learning model. The model is trained to classify images as either real or manipulated (deepfake).
 
 ### Requirements
 - Python (version 3.x)
