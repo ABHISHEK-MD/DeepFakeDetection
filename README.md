@@ -1,6 +1,6 @@
 # RJPOLICE_HACK_494_t0b3h4ck3r5_8
 
-## Deepfake Image Detection
+## DeepFake Detection
 
 ### Overview
 This project demonstrates a web application for image,video and audio classification using a deep learning model. The model is trained to classify images as either real or manipulated (deepfake).
