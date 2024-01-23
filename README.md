@@ -9,6 +9,7 @@ This project demonstrates a web application for image,video and audio classifica
 - Keras
 - Flask
 
+## NOTE : Model is not uploaded in this repository (Size is larger than 25MB)
 ### Installation
 
 1. Clone the repository:
